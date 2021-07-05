@@ -15,8 +15,8 @@ mysql.init_app(app)
 def index():
     conn = mysql.connect()
     csr = mysql.cursor()
-    
-    SQL = "insert into socio(nombre, "
+
+    SQL = "insert into socio(nombre, edad ) "
 
 
     return render_template("socios\index.html")
