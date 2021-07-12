@@ -1,0 +1,25 @@
+<table>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>nombre</th>
+            <th>edad</th>
+            <th>F Nac</th>
+            <th>DNI</th>
+            <th>Sexo</th>    
+        </tr>
+    </thead>
+    <tbody>
+        {% for socio in socios %}
+        <tr>
+            <td>{{socio[0]}}</td>
+            <td>{{socio[1]}}</td>
+            <td>{{socio[2]}}</td>
+            <td>{{socio[3]}}</td>
+            <td>{{socio[4]}}</td>
+            <td>{{socio[5]}}</td>
+        </tr>
+        {% endfor %}    
+    </tbody>
+
+</table>
