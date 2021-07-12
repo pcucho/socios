@@ -1,0 +1,19 @@
+<form method="POST" action="/update" enctype="multipart/form-data"> 
+    <label hidden for="txtid">ID</label>
+    <input type="text" name="txtid" id="txtid" value={{socios[0]}}> 
+    <label for="txtnombre">Nombre:</label>
+    <input type="text" name="txtnombre" id="txtnombre" value={{socios[1]}}> 
+    </br>
+    <label for="txtedad">edad:</label>
+    <input type="number" name="txtedad" id="txtedad" value={{socios[2]}}>  
+    </br>
+    <label for="txtfc">fecha Nacimiento:</label>
+    <input type="date" name="txtfc" id="txtfc" value={{socios[3]}}> 
+    </br>
+    <label for="txtfoto">fecha Nacimiento:</label>
+    <input type="file" name="txtfoto" id="txtfoto" value={{socios[6]}}> 
+    </br>
+    </br>
+    <input type="submit" value="Modificar Socio">
+
+</form>
