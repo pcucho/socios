@@ -1,3 +1,4 @@
+{% include 'header.html' %}
 <table>
     <thead>
         <tr>
@@ -19,7 +20,12 @@
             <td>{{socio[4]}}</td>
             <td>{{socio[5]}}</td>
         </tr>
+        <td>
+            <a href = "/delete/{{socio[0]}}"> borrar </a>
+            <a href = "/modify/{{socio[0]}}"> edit </a>
+        </td>
         {% endfor %}    
     </tbody>
 
 </table>
+{% include 'footer.html' %}
